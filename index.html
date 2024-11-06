@@ -14,7 +14,7 @@
 <link href="index_files/libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.57">
 
-  <title>Presentation title</title>
+  <title>Data formats</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -406,10 +406,10 @@
 <p><img data-src="images/logo-title-slide.png"></p>
 </div><!-- Title slide content --><div class="column information" style="width:68%;">
 <div class="title">
-<p>Quarto template</p>
+<p>Data formats</p>
 </div>
 <div class="subtitle">
-<p>HTML presentation w/ RevealJS framework</p>
+<p>Structure, formats, files &amp; extensions</p>
 </div>
 <div class="date">
 <p>November 2024</p>
@@ -455,152 +455,395 @@ Author name<br/>
 </div>
 <!-- Close {.title-slide-container} -->
 </div>
-<!-- Insert section 'Table of contents' -->
+<!-- Insert section 'Main' -->
 </section>
 <section>
-<section id="table-of-contents" class="title-slide slide level1 center">
-<h1>Table of contents</h1>
+<section id="file-formats" class="title-slide slide level1 center">
+<h1><i class="fa-solid fa-file-import" aria-label="file-import"></i> &nbsp;File formats</h1>
 
 </section>
-<section id="table-of-contents-1" class="slide level2">
-<h2>Table of contents</h2>
-<p><br> <br> <br> <br> <br> <br></p>
-<div class="columns">
-<div class="column center" style="width:33%;">
-<p><i class="fa-solid fa-code fa-2x" aria-label="code"></i></p>
-<p><br> Section 1</p>
-</div><div class="column center" style="width:33%;">
-<p><i class="fa-brands fa-github fa-2x" aria-label="github"></i></p>
-<p><br> Section 2</p>
-</div><div class="column center" style="width:33%;">
-<p><i class="fa-solid fa-book fa-2x" aria-label="book"></i></p>
-<p><br> Resources</p>
-</div></div>
-<!-- Insert section 'Quarto basics' -->
-</section></section>
-<section>
-<section id="section-1" class="title-slide slide level1 center">
-<h1>Section 1</h1>
-
-</section>
-<section id="slide-title" class="slide level2">
-<h2>Slide title</h2>
-<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit<sup>1</sup>…</p>
+<section id="reading-data-files" class="slide level2">
+<h2>Reading data files</h2>
+<p><i class="fa-solid fa-circle-right" aria-label="circle-right"></i> &nbsp;<strong>Plain text-based files</strong></p>
 <p><br></p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><strong>Left column</strong></p>
-<p>Neque porro quisquam est qui dolorem ipsum.</p>
-<p><img data-src="images/logo-title-slide.png" style="width:25.0%"></p>
-</div><div class="column center" style="width:50%;">
-<p><strong>Right column (content centered)</strong></p>
-<p>Neque porro quisquam est qui dolorem ipsum.</p>
-<p><img data-src="images/logo-title-slide.png" style="width:50.0%"></p>
-</div></div>
-<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…</p>
-<aside><ol class="aside-footnotes"><li id="fn1"><p>This is a footnote.</p></li></ol></aside></section></section>
-<section>
-<section id="section-2" class="title-slide slide level1 center">
-<h1>Section 2</h1>
-
-</section>
-<section id="slide-title-1" class="slide level2">
-<h2>Slide title</h2>
-<div class="columns">
-<div class="column" style="width:30%;">
-<p><strong>Left column</strong></p>
-<p>Neque porro quisquam est.</p>
-<p><img data-src="images/logo-title-slide.png" style="width:55.0%"></p>
-</div><div class="column" style="width:70%;">
-<p><strong>Right column</strong></p>
-<p>Neque porro quisquam est qui dolorem ipsum.</p>
-<table class="caption-top" style="width:100%;">
-<caption>Table 1: Table caption</caption>
-<colgroup>
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Header 1</th>
-<th style="text-align: center;">Header 2</th>
-<th style="text-align: right;">Header 3</th>
-<th style="text-align: right;">Header 4</th>
-<th style="text-align: right;">Header 5</th>
-<th style="text-align: right;">Header 6</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Row 1 Col 1</td>
-<td style="text-align: center;">Row 1 Col 2</td>
-<td style="text-align: right;">Row 1 Col 3</td>
-<td style="text-align: right;">Row 1 Col 4</td>
-<td style="text-align: right;">Row 1 Col 5</td>
-<td style="text-align: right;">Row 1 Col 6</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Row 2 Col 1</td>
-<td style="text-align: center;">Row 2 Col 2</td>
-<td style="text-align: right;">Row 2 Col 3</td>
-<td style="text-align: right;">Row 2 Col 4</td>
-<td style="text-align: right;">Row 2 Col 5</td>
-<td style="text-align: right;">Row 2 Col 6</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Row 3 Col 1</td>
-<td style="text-align: center;">Row 3 Col 2</td>
-<td style="text-align: right;">Row 3 Col 3</td>
-<td style="text-align: right;">Row 3 Col 4</td>
-<td style="text-align: right;">Row 3 Col 5</td>
-<td style="text-align: right;">Row 3 Col 6</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Row 4 Col 1</td>
-<td style="text-align: center;">Row 4 Col 2</td>
-<td style="text-align: right;">Row 4 Col 3</td>
-<td style="text-align: right;">Row 4 Col 4</td>
-<td style="text-align: right;">Row 4 Col 5</td>
-<td style="text-align: right;">Row 4 Col 6</td>
-</tr>
-</tbody>
-</table>
-</div></div>
-<p><br></p>
-<p>Insert icons with <a href="https://fontawesome.com/search">Font Awesome</a> <i class="fa-brands fa-github" aria-label="github"></i> or <a href="https://jpswalsh.github.io/academicons/">Academicons</a> <i class="ai  ai-sci-hub"></i></p>
-<p><br></p>
-<div class="columns">
-<div class="column" style="width:50%;">
-
+<p><strong>Comma-separated values</strong> (<code>.csv</code>)</p>
 </div><div class="column" style="width:50%;">
+<p><strong>Tab-separated values</strong> (<code>.tsv</code> &amp; <code>.txt</code>)</p>
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="small">
+<p><em>Suggested functions:</em></p>
+<ul>
+<li><code>read.csv()</code> or <code>read.csv2()</code></li>
+<li><code>read.table()</code></li>
+<li><code>read.delim()</code></li>
+</ul>
+<p><i class="fa-solid fa-lightbulb" aria-label="lightbulb"></i> &nbsp;See also the package <a href="https://readr.tidyverse.org/"><code>readr</code></a></p>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="small">
+<p><em>Suggested functions:</em></p>
+<ul>
+<li><code>read.table()</code></li>
+<li><code>read.delim()</code></li>
+</ul>
+<p><i class="fa-solid fa-lightbulb" aria-label="lightbulb"></i> &nbsp;See also the package <a href="https://readr.tidyverse.org/"><code>readr</code></a></p>
+</div>
+</div></div>
+</section>
+<section id="reading-data-files-1" class="slide level2">
+<h2>Reading data files</h2>
+<p><i class="fa-solid fa-circle-right" aria-label="circle-right"></i> &nbsp;<strong>Plain text-based files</strong></p>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>JavaScript Object Notation</strong> (<code>.json</code>)</p>
+</div><div class="column" style="width:50%;">
+<p><strong>Yet Another Markup Language</strong> (<code>.yml</code> &amp; <code>.yaml</code>)</p>
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="small">
+<p><em>Suggested function:</em></p>
+<ul>
+<li><code>jsonlite::fromJSON()</code></li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="small">
+<p><em>Suggested function:</em></p>
+<ul>
+<li><code>yaml::read_yaml()</code></li>
+</ul>
+</div>
+</div></div>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Extensible Markup Language</strong> (<code>.xml</code>)</p>
+</div><div class="column" style="width:50%;">
+<p><strong>Hypertext Markup Language</strong> (<code>.html</code>)</p>
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="small">
+<p><em>Suggested function:</em></p>
+<ul>
+<li><code>xml2::read_xml()</code></li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="small">
+<p><em>Suggested function:</em></p>
+<ul>
+<li><code>xml2::read_html()</code></li>
+</ul>
+</div>
+</div></div>
+</section>
+<section id="reading-data-files-2" class="slide level2">
+<h2>Reading data files</h2>
+<p><i class="fa-solid fa-circle-right" aria-label="circle-right"></i> &nbsp;<strong>Plain text-based files</strong></p>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Other plain text files</strong> (<code>.txt</code>, etc.)</p>
+</div><div class="column" style="width:50%;">
+
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="small">
+<p><em>Suggested function:</em></p>
+<ul>
+<li><code>readLines()</code></li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+
+</div></div>
+</section>
+<section id="reading-data-files-3" class="slide level2">
+<h2>Reading data files</h2>
+<p><i class="fa-solid fa-circle-right" aria-label="circle-right"></i> &nbsp;<strong>Spreadsheets</strong></p>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Microsoft Excel</strong> (<code>.xls</code> &amp; <code>.xlsx</code>)</p>
+</div><div class="column" style="width:50%;">
+<p><strong>Google Sheets</strong> (online)</p>
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="small">
+<p><em>Suggested functions:</em></p>
+<ul>
+<li><code>readxl::read_excel()</code></li>
+<li><code>readxl::read_xls()</code></li>
+<li><code>readxl::read_xlsx()</code></li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="small">
+<p><em>Suggested function:</em></p>
+<ul>
+<li><code>gsheet::gsheet2tbl()</code></li>
+</ul>
+</div>
+</div></div>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>OpenDocument Spreadsheet</strong> (<code>.ods</code>)</p>
+</div><div class="column" style="width:50%;">
+
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="small">
+<p><em>Suggested functions:</em></p>
+<ul>
+<li><code>readODS::read_ods()</code></li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+
+</div></div>
+</section>
+<section id="reading-data-files-4" class="slide level2">
+<h2>Reading data files</h2>
+<p><i class="fa-solid fa-circle-right" aria-label="circle-right"></i> &nbsp;<strong><i class="fa-brands fa-r-project" aria-label="r-project"></i> &nbsp;binary files</strong></p>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong><i class="fa-brands fa-r-project" aria-label="r-project"></i> &nbsp;saved objects</strong> (<code>.Rdata</code> &amp; <code>.rds</code>)</p>
+</div><div class="column" style="width:50%;">
+<p><strong>Quick Serialization of <i class="fa-brands fa-r-project" aria-label="r-project"></i> &nbsp;Objects</strong> (<code>.qs</code>)</p>
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="small">
+<p><em>Suggested functions:</em></p>
+<ul>
+<li><code>load()</code></li>
+<li><code>readRDS()</code></li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="small">
+<p><em>Suggested function:</em></p>
+<ul>
+<li><code>qs::qread()</code></li>
+</ul>
+</div>
+</div></div>
+</section>
+<section id="reading-data-files-5" class="slide level2">
+<h2>Reading data files</h2>
+<p><i class="fa-solid fa-circle-right" aria-label="circle-right"></i> &nbsp;<strong>Images (rasters)</strong></p>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Joint Photographic Experts Group</strong> (<code>.jpg</code> &amp; <code>.jpeg</code>)</p>
+</div><div class="column" style="width:50%;">
+<p><strong>Portable Network Graphics</strong> (<code>.png</code>)</p>
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="small">
+<p><em>Suggested function:</em></p>
+<ul>
+<li><code>jpeg::readJPEG()</code></li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="small">
+<p><em>Suggested function:</em></p>
+<ul>
+<li><code>png::readPNG()</code></li>
+</ul>
+</div>
+</div></div>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Tagged Image File Format</strong> (<code>.tif</code> &amp; <code>.tiff</code>)</p>
+</div><div class="column" style="width:50%;">
+
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="small">
+<p><em>Suggested function:</em></p>
+<ul>
+<li><code>tiff::readTIFF()</code></li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+
+</div></div>
+</section>
+<section id="reading-data-files-6" class="slide level2">
+<h2>Reading data files</h2>
+<p><i class="fa-solid fa-circle-right" aria-label="circle-right"></i> &nbsp;<strong>Spatial data files</strong></p>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Vector layers</strong> (<code>.shp</code>, <code>.geojson</code>, <code>.gpkg</code>, etc.)</p>
+</div><div class="column" style="width:50%;">
+<p><strong>Raster layers</strong> (<code>.tif</code>, <code>.asc</code>, <code>.grd</code>, etc.)</p>
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="small">
+<p><em>Suggested functions:</em></p>
+<ul>
+<li><code>sf::st_read()</code></li>
+<li><code>terra::vect()</code></li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="small">
+<p><em>Suggested function:</em></p>
+<ul>
+<li><code>terra::rast()</code></li>
+</ul>
+</div>
+</div></div>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Network Common Data Form - NetCDF</strong> (<code>.nc</code>)</p>
+</div><div class="column" style="width:50%;">
+
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="small">
+<p><em>Suggested functions:</em></p>
+<ul>
+<li><code>ncdf4::nc_open()</code></li>
+<li><code>terra::rast()</code></li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+
+</div></div>
+</section>
+<section id="reading-data-files-7" class="slide level2">
+<h2>Reading data files</h2>
+<p><i class="fa-solid fa-circle-right" aria-label="circle-right"></i> &nbsp;<strong>SQL databases</strong></p>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>MySQL</strong></p>
+</div><div class="column" style="width:50%;">
+<p><strong>PostgreSQL</strong></p>
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="small">
+<p><em>Suggested packages:</em> <code>DBI</code> &amp; <code>RMySQL</code></p>
+<p><br></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href=""></a><span class="co"># Block code with unicode symbol ----</span></span>
-<span id="cb1-2"><a href=""></a>x <span class="ot">&lt;-</span> <span class="st">"I \u2665 Quarto"</span></span>
-<span id="cb1-3"><a href=""></a><span class="fu">print</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "I ♥ Quarto"</code></pre>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href=""></a><span class="do">## Connect to MySQL database ----</span></span>
+<span id="cb1-2"><a href=""></a>con <span class="ot">&lt;-</span> DBI<span class="sc">::</span><span class="fu">dbConnect</span>(RMySQL<span class="sc">::</span><span class="fu">MySQL</span>(), <span class="at">dbname =</span> ...)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="small">
+<p><em>Suggested packages:</em> <code>DBI</code> &amp; <code>RPostgreSQL</code></p>
+<p><br></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href=""></a><span class="do">## Connect to PostgreSQL database ----</span></span>
+<span id="cb2-2"><a href=""></a>con <span class="ot">&lt;-</span> DBI<span class="sc">::</span><span class="fu">dbConnect</span>(RPostgreSQL<span class="sc">::</span><span class="fu">PostgreSQL</span>(), <span class="at">dbname =</span> ...)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div></div>
-</section></section>
-<section>
-<section id="resources" class="title-slide slide level1 center">
-<h1>Resources</h1>
-
-</section>
-<section id="resources-1" class="slide level2">
-<h2>Resources</h2>
-<ul>
-<li><a href="https://quarto.org/docs/guide/">Quarto guide</a></li>
-<li><a href="https://quarto.org/docs/authoring/markdown-basics.html">Markdown syntax</a></li>
-<li><a href="https://quarto.org/docs/presentations/revealjs/">RevealJS guide</a></li>
-</ul>
 <p><br></p>
-<p>To use this template, visit the <a href="https://github.com/biodiversitydata/quarto-template/wiki"><strong>Wiki</strong></a>.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>SQLite</strong> (<code>.sql</code>)</p>
+</div><div class="column" style="width:50%;">
+
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="small">
+<p><em>Suggested packages:</em> <code>DBI</code> &amp; <code>RSQLite</code></p>
+<p><br></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href=""></a><span class="do">## Connect to SQLite database ----</span></span>
+<span id="cb3-2"><a href=""></a>con <span class="ot">&lt;-</span> DBI<span class="sc">::</span><span class="fu">dbConnect</span>(RSQLite<span class="sc">::</span><span class="fu">SQLite</span>(), <span class="at">dbname =</span> ...)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+
+</div></div>
+</section>
+<section id="reading-data-files-8" class="slide level2">
+<h2>Reading data files</h2>
+<p><i class="fa-solid fa-circle-right" aria-label="circle-right"></i> &nbsp;<strong>Other formats</strong></p>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Portable Document Format</strong> (<code>.pdf</code>)</p>
+</div><div class="column" style="width:50%;">
+<p><strong>BibTex</strong> (<code>.bib</code>)</p>
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="small">
+<p><em>Suggested function:</em></p>
+<ul>
+<li><code>pdftools::pdf_text()</code></li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="small">
+<p><em>Suggested function:</em></p>
+<ul>
+<li><code>bib2df::bib2df()</code></li>
+</ul>
+</div>
+</div></div>
+</section>
+<section id="reading-data-files-9" class="slide level2">
+<h2>Reading data files</h2>
+<p><i class="fa-solid fa-circle-right" aria-label="circle-right"></i> &nbsp;<strong>Compressed archives</strong></p>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>ZIP files</strong> (<code>.zip</code>)</p>
+</div><div class="column" style="width:50%;">
+<p><strong>TAR files</strong> (<code>.tar</code>)</p>
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="small">
+<p><em>Suggested function:</em></p>
+<ul>
+<li><code>unzip()</code></li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="small">
+<p><em>Suggested function:</em></p>
+<ul>
+<li><code>untar()</code></li>
+</ul>
+</div>
+</div></div>
+</section>
+<section id="encoding" class="slide level2">
+<h2>Encoding</h2>
+<iframe src="https://giphy.com/embed/6v2UJRyFAsTXgvJrin" width="360" height="360" style="margin: 0 auto;display: block;border-style:none;" frameborder="0" class="giphy-embed" allowfullscreen="">
+</iframe>
+<p><br><br></p>
+<p><i class="fa-solid fa-circle-right" aria-label="circle-right"></i> &nbsp;Use the function <a href="https://readr.tidyverse.org/reference/encoding.html"><code>readr::guess_encoding()</code></a> to find the good encoding.</p>
 <div class="quarto-auto-generated-content">
 <p><img src="images/logo-affiliation.png" class="slide-logo"></p>
 <div class="footer footer-default">
@@ -608,7 +851,6 @@ Author name<br/>
 </div>
 </div>
 </section></section>
-
     </div>
   </div>
 
