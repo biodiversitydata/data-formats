@@ -19,9 +19,16 @@ engine: knitr
 ```
 
 
+<!-- Insert section 'Data lifecycle' -->
+
+```{r}
+#| child: "sections/data-lifecycle.qmd"
+```
+
 <!-- Insert section 'Main' -->
 
 ```{r}
 #| child: "sections/main.qmd"
 ```
+
 
