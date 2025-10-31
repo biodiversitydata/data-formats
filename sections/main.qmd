@@ -271,7 +271,8 @@ _Suggested functions:_
 ::: {.small}
 _Suggested function:_
 
-- `qs::qread()`
+- `qs::qread()` (deprecated soon)
+- `qs2::qs_read()`
 :::
 :::
 
@@ -491,6 +492,7 @@ con <- DBI::dbConnect(RPostgreSQL::PostgreSQL(), dbname = ...)
 :::
 
 ::: {.column width=50%}
+**MariaDB**
 :::
 
 ::::
@@ -515,6 +517,20 @@ con <- DBI::dbConnect(RSQLite::SQLite(), dbname = ...)
 :::
 
 ::: {.column width=50%}
+
+::: {.small}
+_Suggested packages:_ `DBI` & `RMariaDB`
+
+<br/>
+
+```{r}
+#| echo: true
+#| eval: false
+
+## Connect to SQLite database ----
+con <- DBI::dbConnect(RMariaDB::MariaDB(), dbname = ...)
+```
+:::
 :::
 
 ::::
@@ -607,11 +623,11 @@ _Suggested function:_
 
 
 
-## Encoding
+## Encoding (%o¨$*&e`)
 
 <iframe src="https://giphy.com/embed/6v2UJRyFAsTXgvJrin" width="360" height="360" style="margin: 0 auto;display: block;border-style:none;" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
 
 <br/><br/>
 
-{{< fa circle-right >}} &nbsp;Use the function [`readr::guess_encoding()`](https://readr.tidyverse.org/reference/encoding.html) to find the good encoding.
+{{< fa circle-right >}} &nbsp;Use the function [`readr::guess_encoding()`](https://readr.tidyverse.org/reference/encoding.html) to find the good encoding (UTF-8, Latin-1, CP1252, etc.)
