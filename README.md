@@ -82,7 +82,7 @@ To understand the file organisation of this repository, please read this [Wiki](
 
 ## Citation
 
-Casajus N (2025) _Biodiversity data: formats_. Online presentation available at <https://github.com/biodiversitydata/data-formats/>.
+Casajus N (2025) Data formats: Structure, formats, files & extensions. Online presentation available at <https://github.com/biodiversitydata/data-formats/>.
 
 
 ## Contributing
