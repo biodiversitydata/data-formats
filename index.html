@@ -6,12 +6,12 @@
 <script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <link href="index_files/libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="index_files/libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <link href="index_files/libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
 <link href="index_files/libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.8.25">
+  <meta name="generator" content="quarto-1.10.19">
 
   <title>Data formats</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -20,10 +20,16 @@
   <link rel="stylesheet" href="index_files/libs/revealjs/dist/reset.css">
   <link rel="stylesheet" href="index_files/libs/revealjs/dist/reveal.css">
   <style>
-    code{white-space: pre-wrap;}
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
     ul.task-list li input[type="checkbox"] {
@@ -98,7 +104,7 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-7e9783838747aff8f3e1fd2788a0d82a.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-c444b5ab7e5d07b649b9ffd7e725c9a6.css">
   <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -214,7 +220,7 @@
 <p>Structure, formats, files &amp; extensions</p>
 </div>
 <div class="date">
-<p>November 2025</p>
+<p>October 2026</p>
 </div>
 <div class="columns authors">
 <div class="column author" style="width:32%;">
@@ -277,7 +283,7 @@ Author name<br/>
 <!-- Insert section 'Main' -->
 </section>
 <section>
-<section id="file-formats" class="title-slide slide level1 center">
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612066696c652d696d706f7274203e7d7d-file-formats" class="title-slide slide level1 center">
 <h1><i class="fa-solid fa-file-import" aria-label="file-import"></i> &nbsp;File formats</h1>
 
 </section>
@@ -569,8 +575,8 @@ Author name<br/>
 <p><em>Suggested packages:</em> <code>DBI</code> &amp; <code>RMySQL</code></p>
 <p><br></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href=""></a><span class="do">## Connect to MySQL database ----</span></span>
-<span id="cb1-2"><a href=""></a>con <span class="ot">&lt;-</span> DBI<span class="sc">::</span><span class="fu">dbConnect</span>(RMySQL<span class="sc">::</span><span class="fu">MySQL</span>(), <span class="at">dbname =</span> ...)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="" aria-label="1"></a><span class="do">## Connect to MySQL database ----</span></span>
+<span id="cb1-2"><a href="" aria-label="2"></a>con <span class="ot">&lt;-</span> DBI<span class="sc">::</span><span class="fu">dbConnect</span>(RMySQL<span class="sc">::</span><span class="fu">MySQL</span>(), <span class="at">dbname =</span> ...)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 </div><div class="column" style="width:50%;">
@@ -578,8 +584,8 @@ Author name<br/>
 <p><em>Suggested packages:</em> <code>DBI</code> &amp; <code>RPostgreSQL</code></p>
 <p><br></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href=""></a><span class="do">## Connect to PostgreSQL database ----</span></span>
-<span id="cb2-2"><a href=""></a>con <span class="ot">&lt;-</span> DBI<span class="sc">::</span><span class="fu">dbConnect</span>(RPostgreSQL<span class="sc">::</span><span class="fu">PostgreSQL</span>(), <span class="at">dbname =</span> ...)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="" aria-label="1"></a><span class="do">## Connect to PostgreSQL database ----</span></span>
+<span id="cb2-2"><a href="" aria-label="2"></a>con <span class="ot">&lt;-</span> DBI<span class="sc">::</span><span class="fu">dbConnect</span>(RPostgreSQL<span class="sc">::</span><span class="fu">PostgreSQL</span>(), <span class="at">dbname =</span> ...)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 </div></div>
@@ -596,8 +602,8 @@ Author name<br/>
 <p><em>Suggested packages:</em> <code>DBI</code> &amp; <code>RSQLite</code></p>
 <p><br></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href=""></a><span class="do">## Connect to SQLite database ----</span></span>
-<span id="cb3-2"><a href=""></a>con <span class="ot">&lt;-</span> DBI<span class="sc">::</span><span class="fu">dbConnect</span>(RSQLite<span class="sc">::</span><span class="fu">SQLite</span>(), <span class="at">dbname =</span> ...)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="" aria-label="1"></a><span class="do">## Connect to SQLite database ----</span></span>
+<span id="cb3-2"><a href="" aria-label="2"></a>con <span class="ot">&lt;-</span> DBI<span class="sc">::</span><span class="fu">dbConnect</span>(RSQLite<span class="sc">::</span><span class="fu">SQLite</span>(), <span class="at">dbname =</span> ...)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 </div><div class="column" style="width:50%;">
@@ -605,8 +611,8 @@ Author name<br/>
 <p><em>Suggested packages:</em> <code>DBI</code> &amp; <code>RMariaDB</code></p>
 <p><br></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href=""></a><span class="do">## Connect to SQLite database ----</span></span>
-<span id="cb4-2"><a href=""></a>con <span class="ot">&lt;-</span> DBI<span class="sc">::</span><span class="fu">dbConnect</span>(RMariaDB<span class="sc">::</span><span class="fu">MariaDB</span>(), <span class="at">dbname =</span> ...)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="" aria-label="1"></a><span class="do">## Connect to SQLite database ----</span></span>
+<span id="cb4-2"><a href="" aria-label="2"></a>con <span class="ot">&lt;-</span> DBI<span class="sc">::</span><span class="fu">dbConnect</span>(RMariaDB<span class="sc">::</span><span class="fu">MariaDB</span>(), <span class="at">dbname =</span> ...)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 </div></div>
