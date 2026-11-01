@@ -15,7 +15,7 @@ Data formats
 :::
 
 ::: {.subtitle}
-Structure, formats, files & extensions
+Data structures, file types, formats & extensions
 :::
 
 ::: {.date}

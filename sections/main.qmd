@@ -1,4 +1,263 @@
-# {{< fa file-import >}} &nbsp;File formats
+# {{< fa square-check >}} &nbsp;Choosing a data file format
+
+## Why are there different file formats?
+
+- A file format defines **how information** is **organised**, **represented** and **stored**
+
+- There is no universal file format: **each format addresses different needs**
+
+. . .
+
+<br>
+
+:::: {.columns}
+
+::: {.column .center width=25%}
+
+[{{< fa layer-group size=2xl >}}]{style="color: #4A8C78;"}
+<br>
+
+[**Nature**]{style="color: #4A8C78 !important;"}
+
+::: {.small}
+Tabular data, text, images, spatial data, bibliographic data, etc.
+:::
+:::
+
+::: {.column .center width=25%}
+
+[{{< fa sitemap size=2xl >}}]{style="color: #C18A45;"}
+<br>
+
+[**Structure**]{style="color: #C18A45 !important;"}
+
+::: {.small}
+Tabular, hierarchical, relational, multidimensional, etc.
+:::
+:::
+
+::: {.column .center width=25%}
+
+[{{< fa file-lines size=2xl >}}]{style="color: #075a80;"}
+<br>
+
+[**Representation**]{style="color: #075a80 !important;"}
+
+::: {.small}
+Text-based or binary
+:::
+:::
+
+::: {.column .center width=25%}
+
+[{{< fa lock-open size=2xl >}}]{style="color: #795F8D;"}
+<br>
+
+[**Openness**]{style="color: #795F8D !important;"}
+
+::: {.small}
+Open or proprietary formats
+:::
+:::
+
+::::
+
+<br>
+
+:::: {.columns}
+
+::: {.column .center width=12.5%}
+:::
+
+::: {.column .center width=25%}
+
+[{{< fa right-left size=2xl >}}]{style="color: #C76D62;"}
+<br>
+
+[**Interoperability**]{style="color: #C76D62 !important;"}
+
+::: {.small}
+Compatibility with<br>different software and OS
+:::
+:::
+
+::: {.column .center width=25%}
+
+[{{< fa gauge-high size=2xl >}}]{style="color: #795F8D;"}
+<br>
+
+[**Performance**]{style="color: #795F8D !important;"}
+
+::: {.small}
+File size,<br>reading and writing speed
+:::
+:::
+
+::: {.column .center width=25%}
+
+[{{< fa box-archive size=2xl >}}]{style="color: #C18A45;"}
+<br>
+
+[**Long-term preservation**]{style="color: #C18A45 !important;"}
+
+::: {.small}
+Ability to store, access and reuse data<br>over time
+:::
+:::
+
+::: {.column .center width=12.5%}
+:::
+
+::::
+
+
+## What types of data and file formats?
+
+<br>
+
+:::: {.columns}
+
+::: {.column .center width=25%}
+
+[{{< fa table size=2xl >}}]{style="color: #4A8C78;"}
+<br>
+
+[**Tabular data**]{style="color: #4A8C78 !important;"}
+
+::: {.small}
+Data organised into rows and columns, with variables and observations
+
+**`.csv`** &nbsp; **`.tsv`** &nbsp; **`.xlsx`** &nbsp; **`.ods`**
+:::
+:::
+
+::: {.column .center .fragment width=25%}
+
+[{{< fa code size=2xl >}}]{style="color: #C18A45;"}
+<br>
+
+[**(Semi-)structured data**]{style="color: #C18A45 !important;"}
+
+::: {.small}
+Data organised according to a defined structure, which may be hierarchical or relational
+
+**`.json`** &nbsp; **`.yaml`** &nbsp; **`.xml`** &nbsp; **`.sql`**
+:::
+:::
+
+::: {.column .center .fragment width=25%}
+
+[{{< fa file-lines size=2xl >}}]{style="color: #075a80;"}
+<br>
+
+[**Unstructured data**]{style="color: #075a80 !important;"}
+
+::: {.small}
+Documents, web pages and other content without a predefined tabular structure
+
+**`.txt`** &nbsp; **`.html`** &nbsp; **`.md`** &nbsp; **`.pdf`**
+:::
+:::
+
+::: {.column .center .fragment width=25%}
+
+[{{< fa map size=2xl >}}]{style="color: #795F8D;"}
+<br>
+
+[**Spatial data**]{style="color: #795F8D !important;"}
+
+::: {.small}
+Data describing geographical objects (vector data) or information on a grid (raster data)
+
+**`.shp`** &nbsp; **`.gpkg`** &nbsp; **`.geotiff`** &nbsp; **`.netcdf`**
+:::
+:::
+
+::::
+
+<br><br>
+
+
+:::: {.columns}
+
+::: {.column .center width=12.5%}
+:::
+
+::: {.column .center .fragment width=25%}
+
+[{{< fa layer-group size=2xl >}}]{style="color: #C76D62;"}
+<br>
+
+[**Multidimensional data**]{style="color: #C76D62 !important;"}
+
+::: {.small}
+Data organised along several dimensions, such as time, depth, latitude, longitude and variables
+
+**`.netcdf`** &nbsp; **`.hdf5`**
+:::
+:::
+
+::: {.column .center .fragment width=25%}
+
+[{{< fa image size=2xl >}}]{style="color: #795F8D;"}
+<br>
+
+[**Multimedia data**]{style="color: #795F8D !important;"}
+
+::: {.small}
+Pictures, photographs, satellite imagery, illustrations, videos and audio files
+
+**`.jpg`** &nbsp; **`.png`** &nbsp; **`.tiff`** &nbsp; **`.mp3`** &nbsp; **`.mp4`**
+:::
+:::
+
+::: {.column .center .fragment width=25%}
+
+[{{< fa book-open size=2xl >}}]{style="color: #C18A45;"}
+<br>
+
+[**Other data families**]{style="color: #C18A45 !important;"}
+
+::: {.small}
+Scientific references, compressed files, R-specific files, etc.
+
+**`.bibtex`** &nbsp; **`.ris`** &nbsp; **`.zip`** &nbsp; **`.rds`** &nbsp; **`.rdata`**
+:::
+:::
+
+::: {.column .center width=12.5%}
+:::
+
+::::
+
+
+
+## Questions to ask before choosing a format
+
+- What is the **nature** and **structure** of my data?
+
+<br>
+
+- Which software and **users** will need to access the data?
+
+<br>
+
+- Do I need to be able to **read the content** directly?
+
+<br>
+
+- Are **file size** and **performance** important?
+
+<br>
+
+- Do I need to **preserve** metadata or complex data structures?
+
+<br>
+
+- Is the format suitable for sharing and **long-term preservation**?
+
+
+# {{< fa file-import >}} &nbsp;Data file formats and {{< fa brands r-project >}}
 
 
 
