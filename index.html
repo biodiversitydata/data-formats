@@ -104,7 +104,7 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-c444b5ab7e5d07b649b9ffd7e725c9a6.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-0b4a035a5d6b4b36f646066556cb1b00.css">
   <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -217,7 +217,7 @@
 <p>Data formats</p>
 </div>
 <div class="subtitle">
-<p>Structure, formats, files &amp; extensions</p>
+<p>Data structures, file types, formats &amp; extensions</p>
 </div>
 <div class="date">
 <p>November 2026</p>
@@ -283,8 +283,162 @@ Author name<br/>
 <!-- Insert section 'Main' -->
 </section>
 <section>
-<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612066696c652d696d706f7274203e7d7d-file-formats" class="title-slide slide level1 center">
-<h1><i class="fa-solid fa-file-import" aria-label="file-import"></i> &nbsp;File formats</h1>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207371756172652d636865636b203e7d7d-choosing-a-data-file-format" class="title-slide slide level1 center">
+<h1><i class="fa-solid fa-square-check" aria-label="square-check"></i> &nbsp;Choosing a data file format</h1>
+
+</section>
+<section id="why-are-there-different-file-formats" class="slide level2">
+<h2>Why are there different file formats?</h2>
+<ul>
+<li><p>A file format defines <strong>how information</strong> is <strong>organised</strong>, <strong>represented</strong> and <strong>stored</strong></p></li>
+<li><p>There is no universal file format: <strong>each format addresses different needs</strong></p></li>
+</ul>
+<div class="fragment">
+<p><br></p>
+<div class="columns">
+<div class="column center" style="width:25%;">
+<p><span style="color: #4A8C78;"><i class="fa-solid fa-layer-group fa-2xl" aria-label="layer-group"></i></span> <br></p>
+<p><span style="color: #4A8C78 !important;"><strong>Nature</strong></span></p>
+<div class="small">
+<p>Tabular data, text, images, spatial data, bibliographic data, etc.</p>
+</div>
+</div><div class="column center" style="width:25%;">
+<p><span style="color: #C18A45;"><i class="fa-solid fa-sitemap fa-2xl" aria-label="sitemap"></i></span> <br></p>
+<p><span style="color: #C18A45 !important;"><strong>Structure</strong></span></p>
+<div class="small">
+<p>Tabular, hierarchical, relational, multidimensional, etc.</p>
+</div>
+</div><div class="column center" style="width:25%;">
+<p><span style="color: #075a80;"><i class="fa-solid fa-file-lines fa-2xl" aria-label="file-lines"></i></span> <br></p>
+<p><span style="color: #075a80 !important;"><strong>Representation</strong></span></p>
+<div class="small">
+<p>Text-based or binary</p>
+</div>
+</div><div class="column center" style="width:25%;">
+<p><span style="color: #795F8D;"><i class="fa-solid fa-lock-open fa-2xl" aria-label="lock-open"></i></span> <br></p>
+<p><span style="color: #795F8D !important;"><strong>Openness</strong></span></p>
+<div class="small">
+<p>Open or proprietary formats</p>
+</div>
+</div></div>
+<p><br></p>
+<div class="columns">
+<div class="column center" style="width:12.5%;">
+
+</div><div class="column center" style="width:25%;">
+<p><span style="color: #C76D62;"><i class="fa-solid fa-right-left fa-2xl" aria-label="right-left"></i></span> <br></p>
+<p><span style="color: #C76D62 !important;"><strong>Interoperability</strong></span></p>
+<div class="small">
+<p>Compatibility with<br>different software and OS</p>
+</div>
+</div><div class="column center" style="width:25%;">
+<p><span style="color: #795F8D;"><i class="fa-solid fa-gauge-high fa-2xl" aria-label="gauge-high"></i></span> <br></p>
+<p><span style="color: #795F8D !important;"><strong>Performance</strong></span></p>
+<div class="small">
+<p>File size,<br>reading and writing speed</p>
+</div>
+</div><div class="column center" style="width:25%;">
+<p><span style="color: #C18A45;"><i class="fa-solid fa-box-archive fa-2xl" aria-label="box-archive"></i></span> <br></p>
+<p><span style="color: #C18A45 !important;"><strong>Long-term preservation</strong></span></p>
+<div class="small">
+<p>Ability to store, access and reuse data<br>over time</p>
+</div>
+</div><div class="column center" style="width:12.5%;">
+
+</div></div>
+</div>
+</section>
+<section id="what-types-of-data-and-file-formats" class="slide level2">
+<h2>What types of data and file formats?</h2>
+<p><br></p>
+<div class="columns">
+<div class="column center" style="width:25%;">
+<p><span style="color: #4A8C78;"><i class="fa-solid fa-table fa-2xl" aria-label="table"></i></span> <br></p>
+<p><span style="color: #4A8C78 !important;"><strong>Tabular data</strong></span></p>
+<div class="small">
+<p>Data organised into rows and columns, with variables and observations</p>
+<p><strong><code>.csv</code></strong> &nbsp; <strong><code>.tsv</code></strong> &nbsp; <strong><code>.xlsx</code></strong> &nbsp; <strong><code>.ods</code></strong></p>
+</div>
+</div><div class="column center fragment" style="width:25%;">
+<p><span style="color: #C18A45;"><i class="fa-solid fa-code fa-2xl" aria-label="code"></i></span> <br></p>
+<p><span style="color: #C18A45 !important;"><strong>(Semi-)structured data</strong></span></p>
+<div class="small">
+<p>Data organised according to a defined structure, which may be hierarchical or relational</p>
+<p><strong><code>.json</code></strong> &nbsp; <strong><code>.yaml</code></strong> &nbsp; <strong><code>.xml</code></strong> &nbsp; <strong><code>.sql</code></strong></p>
+</div>
+</div><div class="column center fragment" style="width:25%;">
+<p><span style="color: #075a80;"><i class="fa-solid fa-file-lines fa-2xl" aria-label="file-lines"></i></span> <br></p>
+<p><span style="color: #075a80 !important;"><strong>Unstructured data</strong></span></p>
+<div class="small">
+<p>Documents, web pages and other content without a predefined tabular structure</p>
+<p><strong><code>.txt</code></strong> &nbsp; <strong><code>.html</code></strong> &nbsp; <strong><code>.md</code></strong> &nbsp; <strong><code>.pdf</code></strong></p>
+</div>
+</div><div class="column center fragment" style="width:25%;">
+<p><span style="color: #795F8D;"><i class="fa-solid fa-map fa-2xl" aria-label="map"></i></span> <br></p>
+<p><span style="color: #795F8D !important;"><strong>Spatial data</strong></span></p>
+<div class="small">
+<p>Data describing geographical objects (vector data) or information on a grid (raster data)</p>
+<p><strong><code>.shp</code></strong> &nbsp; <strong><code>.gpkg</code></strong> &nbsp; <strong><code>.geotiff</code></strong> &nbsp; <strong><code>.netcdf</code></strong></p>
+</div>
+</div></div>
+<p><br><br></p>
+<div class="columns">
+<div class="column center" style="width:12.5%;">
+
+</div><div class="column center fragment" style="width:25%;">
+<p><span style="color: #C76D62;"><i class="fa-solid fa-layer-group fa-2xl" aria-label="layer-group"></i></span> <br></p>
+<p><span style="color: #C76D62 !important;"><strong>Multidimensional data</strong></span></p>
+<div class="small">
+<p>Data organised along several dimensions, such as time, depth, latitude, longitude and variables</p>
+<p><strong><code>.netcdf</code></strong> &nbsp; <strong><code>.hdf5</code></strong></p>
+</div>
+</div><div class="column center fragment" style="width:25%;">
+<p><span style="color: #795F8D;"><i class="fa-solid fa-image fa-2xl" aria-label="image"></i></span> <br></p>
+<p><span style="color: #795F8D !important;"><strong>Multimedia data</strong></span></p>
+<div class="small">
+<p>Pictures, photographs, satellite imagery, illustrations, videos and audio files</p>
+<p><strong><code>.jpg</code></strong> &nbsp; <strong><code>.png</code></strong> &nbsp; <strong><code>.tiff</code></strong> &nbsp; <strong><code>.mp3</code></strong> &nbsp; <strong><code>.mp4</code></strong></p>
+</div>
+</div><div class="column center fragment" style="width:25%;">
+<p><span style="color: #C18A45;"><i class="fa-solid fa-book-open fa-2xl" aria-label="book-open"></i></span> <br></p>
+<p><span style="color: #C18A45 !important;"><strong>Other data families</strong></span></p>
+<div class="small">
+<p>Scientific references, compressed files, R-specific files, etc.</p>
+<p><strong><code>.bibtex</code></strong> &nbsp; <strong><code>.ris</code></strong> &nbsp; <strong><code>.zip</code></strong> &nbsp; <strong><code>.rds</code></strong> &nbsp; <strong><code>.rdata</code></strong></p>
+</div>
+</div><div class="column center" style="width:12.5%;">
+
+</div></div>
+</section>
+<section id="questions-to-ask-before-choosing-a-format" class="slide level2">
+<h2>Questions to ask before choosing a format</h2>
+<ul>
+<li>What is the <strong>nature</strong> and <strong>structure</strong> of my data?</li>
+</ul>
+<p><br></p>
+<ul>
+<li>Which software and <strong>users</strong> will need to access the data?</li>
+</ul>
+<p><br></p>
+<ul>
+<li>Do I need to be able to <strong>read the content</strong> directly?</li>
+</ul>
+<p><br></p>
+<ul>
+<li>Are <strong>file size</strong> and <strong>performance</strong> important?</li>
+</ul>
+<p><br></p>
+<ul>
+<li>Do I need to <strong>preserve</strong> metadata or complex data structures?</li>
+</ul>
+<p><br></p>
+<ul>
+<li>Is the format suitable for sharing and <strong>long-term preservation</strong>?</li>
+</ul>
+</section></section>
+<section>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612066696c652d696d706f7274203e7d7d-data-file-formats-and-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320722d70726f6a656374203e7d7d" class="title-slide slide level1 center">
+<h1><i class="fa-solid fa-file-import" aria-label="file-import"></i> &nbsp;Data file formats and <i class="fa-brands fa-r-project" aria-label="r-project"></i></h1>
 
 </section>
 <section id="reading-data-files" class="slide level2">
