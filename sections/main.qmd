@@ -4,6 +4,8 @@
 
 - A file format defines **how information** is **organised**, **represented** and **stored**
 
+. . .
+
 - There is no universal file format: **each format addresses different needs**
 
 . . .
@@ -234,25 +236,17 @@ Scientific references, compressed files, R-specific files, etc.
 
 ## Questions to ask before choosing a format
 
-- What is the **nature** and **structure** of my data?
+<br><br><br>
 
-<br>
+- What is the **nature** and **structure** of my data?
 
 - Which software and **users** will need to access the data?
 
-<br>
-
 - Do I need to be able to **read the content** directly?
-
-<br>
 
 - Are **file size** and **performance** important?
 
-<br>
-
 - Do I need to **preserve** metadata or complex data structures?
-
-<br>
 
 - Is the format suitable for sharing and **long-term preservation**?
 
@@ -261,11 +255,8 @@ Scientific references, compressed files, R-specific files, etc.
 
 
 
-## Reading data files
+## {{< fa table >}}&nbsp; Tabular data - Text-based files
 
-{{< fa circle-right >}} &nbsp;**Plain text-based files**
-
-<br/>
 
 :::: {.columns}
 
@@ -284,11 +275,18 @@ Scientific references, compressed files, R-specific files, etc.
 ::: {.column width=50%}
 
 ::: {.small}
-_Suggested functions:_
+- Import data w/
 
   - `read.csv()` or `read.csv2()`
   - `read.table()`
   - `read.delim()`
+:::
+
+::: {.small}
+- Export data w/:
+
+  - `write.csv()` or `write.csv2()`
+  - `write.table()`
 
 {{< fa lightbulb >}} &nbsp;See also the package [`readr`](https://readr.tidyverse.org/)
 
@@ -298,10 +296,16 @@ _Suggested functions:_
 ::: {.column width=50%}
 
 ::: {.small}
-_Suggested functions:_
+- Import data w/
 
   - `read.table()`
   - `read.delim()`
+:::
+
+::: {.small}
+- Export data w/:
+
+  - `write.table()`
 
 {{< fa lightbulb >}} &nbsp;See also the package [`readr`](https://readr.tidyverse.org/)
 
@@ -311,11 +315,92 @@ _Suggested functions:_
 ::::
 
 
-## Reading data files
 
-{{< fa circle-right >}} &nbsp;**Plain text-based files**
+## {{< fa table >}}&nbsp; Tabular data - Spreadsheets
+
+
+:::: {.columns}
+
+::: {.column width=50%}
+**Microsoft Excel** (`.xls` & `.xslx`)
+:::
+
+::: {.column width=50%}
+**Google Sheets** (none)
+:::
+
+::::
+
+:::: {.columns}
+
+::: {.column width=50%}
+
+::: {.small}
+- Import data w/
+
+  - `readxl::read_excel()`
+  - `readxl::read_xls()`
+  - `readxl::read_xlsx()`
+:::
+
+::: {.small}
+- Export data w/:
+
+  - `writexl::write_xlsx()`
+:::
+:::
+
+::: {.column width=50%}
+
+::: {.small}
+- Import data w/
+
+  - `gsheet::gsheet2tbl`
+:::
+:::
+
+::::
+
 
 <br/>
+
+:::: {.columns}
+
+::: {.column width=50%}
+**OpenDocument** (`.ods`)
+:::
+
+::: {.column width=50%}
+:::
+
+::::
+
+:::: {.columns}
+
+::: {.column width=50%}
+
+::: {.small}
+- Import data w/
+
+  - `readODS::read_ods()`
+:::
+
+::: {.small}
+- Export data w/:
+
+  - `readODS::write_ods()`
+:::
+:::
+
+::: {.column width=50%}
+:::
+
+::::
+
+
+
+## {{< fa code >}}&nbsp; Hierarchical & (semi-)structured data
+
 
 :::: {.columns}
 
@@ -334,18 +419,32 @@ _Suggested functions:_
 ::: {.column width=50%}
 
 ::: {.small}
-_Suggested function:_
+- Import data w/:
 
-- `jsonlite::fromJSON()`
+  - `jsonlite::fromJSON()`
+  - `jsonlite::read_json()`
+:::
+
+::: {.small}
+- Export data w/:
+
+  - `jsonlite::toJSON()`
+  - `jsonlite::write_json()`
 :::
 :::
 
 ::: {.column width=50%}
 
 ::: {.small}
-_Suggested function:_
+- Import data w/:
 
-- `yaml::read_yaml()`
+  - `yaml::read_yaml()`
+:::
+
+::: {.small}
+- Export data w/:
+
+  - `yaml::write_yaml()`
 :::
 :::
 
@@ -371,18 +470,30 @@ _Suggested function:_
 ::: {.column width=50%}
 
 ::: {.small}
-_Suggested function:_
+- Import data w/:
 
-- `xml2::read_xml()`
+  - `xml2::read_xml()`
+:::
+
+::: {.small}
+- Export data w/:
+
+  - `xml2::write_xml()`
 :::
 :::
 
 ::: {.column width=50%}
 
 ::: {.small}
-_Suggested function:_
+- Import data w/:
 
-- `xml2::read_html()`
+  - `xml2::read_html()`
+:::
+
+::: {.small}
+- Export data w/:
+
+  - `xml2::write_html()`
 :::
 :::
 
@@ -390,11 +501,7 @@ _Suggested function:_
 
 
 
-## Reading data files
-
-{{< fa circle-right >}} &nbsp;**Plain text-based files**
-
-<br/>
+## {{< fa file-lines >}} &nbsp;Unstructured data
 
 :::: {.columns}
 
@@ -412,9 +519,15 @@ _Suggested function:_
 ::: {.column width=50%}
 
 ::: {.small}
-_Suggested function:_
+- Import data w/:
 
-- `readLines()`
+  - `readLines()`
+:::
+
+::: {.small}
+- Export data w/:
+
+  - `writeLines()`
 :::
 :::
 
@@ -425,20 +538,17 @@ _Suggested function:_
 
 
 
-## Reading data files
 
-{{< fa circle-right >}} &nbsp;**Spreadsheets**
-
-<br/>
+## {{< fa brands r-project >}}&nbsp; Binary files
 
 :::: {.columns}
 
 ::: {.column width=50%}
-**Microsoft Excel** (`.xls` & `.xlsx`)
+**External representation of objects** (`.Rdata` & `.rds`)
 :::
 
 ::: {.column width=50%}
-**Google Sheets** (online)
+**Quick serialization of objects** (`.qs`)
 :::
 
 ::::
@@ -448,90 +558,31 @@ _Suggested function:_
 ::: {.column width=50%}
 
 ::: {.small}
-_Suggested functions:_
+- Import data w/:
 
-- `readxl::read_excel()`
-- `readxl::read_xls()`
-- `readxl::read_xlsx()`
+  - `load()`
+  - `readRDS()`
+:::
+
+::: {.small}
+- Export data w/:
+
+  - `save()`
+  - `saveRDS()`
 :::
 :::
 
 ::: {.column width=50%}
 ::: {.small}
-_Suggested function:_
+- Import data w/:
 
-- `gsheet::gsheet2tbl()`
+  - `qs2::qs_read()`
 :::
-:::
-
-::::
-
-<br/>
-
-:::: {.columns}
-
-::: {.column width=50%}
-**OpenDocument Spreadsheet** (`.ods`)
-:::
-
-::: {.column width=50%}
-:::
-
-::::
-
-:::: {.columns}
-
-::: {.column width=50%}
 
 ::: {.small}
-_Suggested functions:_
+- Export data w/:
 
-- `readODS::read_ods()`
-:::
-:::
-
-::: {.column width=50%}
-:::
-
-::::
-
-
-## Reading data files
-
-{{< fa circle-right >}} &nbsp;**{{< fa brands r-project >}} &nbsp;binary files**
-
-<br/>
-
-:::: {.columns}
-
-::: {.column width=50%}
-**{{< fa brands r-project >}} &nbsp;saved objects** (`.Rdata` & `.rds`)
-:::
-
-::: {.column width=50%}
-**Quick Serialization of {{< fa brands r-project >}} &nbsp;Objects** (`.qs`)
-:::
-
-::::
-
-:::: {.columns}
-
-::: {.column width=50%}
-
-::: {.small}
-_Suggested functions:_
-
-- `load()`
-- `readRDS()`
-:::
-:::
-
-::: {.column width=50%}
-::: {.small}
-_Suggested function:_
-
-- `qs::qread()` (deprecated soon)
-- `qs2::qs_read()`
+  - `qs2::qs_save()`
 :::
 :::
 
@@ -539,11 +590,7 @@ _Suggested function:_
 
 
 
-## Reading data files
-
-{{< fa circle-right >}} &nbsp;**Images (rasters)**
-
-<br/>
+## {{< fa image >}}&nbsp; Multimedia files
 
 :::: {.columns}
 
@@ -562,17 +609,29 @@ _Suggested function:_
 ::: {.column width=50%}
 
 ::: {.small}
-_Suggested function:_
+- Import data w/:
 
-- `jpeg::readJPEG()`
+  - `jpeg::readJPEG()`
+:::
+
+::: {.small}
+- Export data w/:
+
+  - `jpeg::writeJPEG()`
 :::
 :::
 
 ::: {.column width=50%}
 ::: {.small}
-_Suggested function:_
+- Import data w/:
 
-- `png::readPNG()`
+  - `png::readPNG()`
+:::
+
+::: {.small}
+- Export data w/:
+
+  - `png::writePNG()`
 :::
 :::
 
@@ -588,6 +647,7 @@ _Suggested function:_
 :::
 
 ::: {.column width=50%}
+**MPEG-2 Audio Layer III** (`.mp3`)
 :::
 
 ::::
@@ -597,24 +657,38 @@ _Suggested function:_
 ::: {.column width=50%}
 
 ::: {.small}
-_Suggested function:_
+- Import data w/:
 
-- `tiff::readTIFF()`
+  - `tiff::readTIFF()`
+:::
+
+::: {.small}
+- Export data w/:
+
+  - `tiff::writeTIFF()`
 :::
 :::
 
 ::: {.column width=50%}
+::: {.small}
+- Import data w/:
+
+  - `av::read_audio_fft()`
+  - `av::read_audio_bin()`
+:::
+
+::: {.small}
+- Export data w/:
+
+  - `av::write_audio_bin()`
+:::
 :::
 
 ::::
 
 
 
-## Reading data files
-
-{{< fa circle-right >}} &nbsp;**Spatial data files**
-
-<br/>
+## {{< fa map >}} &nbsp;**Spatial data files**
 
 :::: {.columns}
 
@@ -633,25 +707,39 @@ _Suggested function:_
 ::: {.column width=50%}
 
 ::: {.small}
-_Suggested functions:_
+- Import data w/:
 
-- `sf::st_read()`
-- `terra::vect()`
+  - `sf::st_read()`
+  - `terra::vect()`
 :::
+
+::: {.small}
+- Export data w/:
+
+  - `sf::st_write()`
+  - `terra::writeVector()`
+:::
+
 :::
 
 ::: {.column width=50%}
 ::: {.small}
-_Suggested function:_
+- Import data w/:
 
-- `terra::rast()`
+  - `terra::rast()`
+:::
+
+::: {.small}
+- Export data w/:
+
+  - `terra::writeRaster()`
 :::
 :::
 
 ::::
 
 
-<br/>
+## {{< fa layer-group >}} &nbsp;**Multidimensional data**
 
 :::: {.columns}
 
@@ -667,12 +755,18 @@ _Suggested function:_
 :::: {.columns}
 
 ::: {.column width=50%}
+::: {.small}
+- Import data w/:
+
+  - `ncdf4::nc_open()` & `ncdf4::nc_close()`
+  - `terra::rast()`
+:::
 
 ::: {.small}
-_Suggested functions:_
+- Export data w/:
 
-- `ncdf4::nc_open()`
-- `terra::rast()`
+  - `ncdf4::nc_create()` & `ncdf4::nc_close()`
+  - `terra::writeCDF()`
 :::
 :::
 
@@ -683,12 +777,8 @@ _Suggested functions:_
 
 
 
-## Reading data files
 
-{{< fa circle-right >}} &nbsp;**SQL databases**
-
-<br/>
-
+## {{< fa database >}} &nbsp;**SQL databases**
 
 :::: {.columns}
 
@@ -717,6 +807,12 @@ _Suggested packages:_ `DBI` & `RMySQL`
 
 ## Connect to MySQL database ----
 con <- DBI::dbConnect(RMySQL::MySQL(), dbname = ...)
+
+## Query database & retrieve results ----
+DBI::dbGetQuery(con, "...")
+
+## Query & modify database ----
+DBI::dbSendQuery(con, "...")
 ```
 :::
 :::
@@ -733,6 +829,12 @@ _Suggested packages:_ `DBI` & `RPostgreSQL`
 
 ## Connect to PostgreSQL database ----
 con <- DBI::dbConnect(RPostgreSQL::PostgreSQL(), dbname = ...)
+
+## Query database & retrieve results ----
+DBI::dbGetQuery(con, "...")
+
+## Query & modify database ----
+DBI::dbSendQuery(con, "...")
 ```
 :::
 :::
@@ -771,6 +873,12 @@ _Suggested packages:_ `DBI` & `RSQLite`
 
 ## Connect to SQLite database ----
 con <- DBI::dbConnect(RSQLite::SQLite(), dbname = ...)
+
+## Query database & retrieve results ----
+DBI::dbGetQuery(con, "...")
+
+## Query & modify database ----
+DBI::dbSendQuery(con, "...")
 ```
 :::
 :::
@@ -788,93 +896,13 @@ _Suggested packages:_ `DBI` & `RMariaDB`
 
 ## Connect to SQLite database ----
 con <- DBI::dbConnect(RMariaDB::MariaDB(), dbname = ...)
+
+## Query database & retrieve results ----
+DBI::dbGetQuery(con, "...")
+
+## Query & modify database ----
+DBI::dbSendQuery(con, "...")
 ```
-:::
-:::
-
-::::
-
-
-
-## Reading data files
-
-{{< fa circle-right >}} &nbsp;**Other formats**
-
-<br/>
-
-
-:::: {.columns}
-
-::: {.column width=50%}
-**Portable Document Format** (`.pdf`)
-:::
-
-::: {.column width=50%}
-**BibTex** (`.bib`)
-:::
-
-::::
-
-:::: {.columns}
-
-::: {.column width=50%}
-
-::: {.small}
-_Suggested function:_
-
-- `pdftools::pdf_text()`
-:::
-:::
-
-::: {.column width=50%}
-::: {.small}
-_Suggested function:_
-
-- `bib2df::bib2df()`
-:::
-:::
-
-::::
-
-
-
-
-
-## Reading data files
-
-{{< fa circle-right >}} &nbsp;**Compressed archives**
-
-<br/>
-
-
-:::: {.columns}
-
-::: {.column width=50%}
-**ZIP files** (`.zip`)
-:::
-
-::: {.column width=50%}
-**TAR files** (`.tar`)
-:::
-
-::::
-
-:::: {.columns}
-
-::: {.column width=50%}
-
-::: {.small}
-_Suggested function:_
-
-- `unzip()`
-:::
-:::
-
-::: {.column width=50%}
-::: {.small}
-_Suggested function:_
-
-- `untar()`
 :::
 :::
 
